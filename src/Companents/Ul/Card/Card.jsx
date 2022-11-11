@@ -1,10 +1,17 @@
 import React from 'react'
 import "./index.scss"
 
-export default function Card() {
+export default function Card({cardImg}) {
   return (
-    <div>Card
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur explicabo, optio modi assumenda cumque placeat iste, omnis numquam inventore minus obcaecati sit maiores facere dolore accusantium voluptatem nisi odit recusandae tempora deleniti ipsum, labore officiis sequi consectetur! Nisi delectus perspiciatis odio aperiam vitae quia fugiat iste, ex nemo alias repellat!
+    <div className='card'>
+      <p className='card__p'>“Cuma perlu <span className='card__p__span'>satu buku</span> untuk jatuh cinta pada membaca, Cari Buku itu! <span className='card__p__span'>Mari jatuh cinta!</span></p>
+      <div className='card__inner'>
+        <img className='card__img' src={cardImg} alt="seven" />
+        <div>
+          <h3 className='card__h3'>Najwa Shihab</h3>
+          <p className='card__p2'>Duta Membaca</p>
+        </div>
+      </div>
     </div>
   )
 }
